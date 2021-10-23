@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'icomoon';
+        src: url('../fonts/icomoon.woff?2ty38j') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: block;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    #nav-toggler span {
+        @apply block w-1/4 h-1/4 bg-gray-50 rounded-full;
+    }
+
+    .close-bar-1, .close-bar-2 {
+        @apply transition-all duration-300;
+    }
+
+    .close-bar-1 {
+        transform: rotate(45deg);
+    }
+
+    .close-bar-2 {
+        transform: rotate(135deg);
+    }
+
+    #nav-toggler .pressed .close-bar-1 {
+        width: 200%;
+        transform: rotate(45deg) translateX(35%);
+    }
+
+    #nav-toggler .pressed .close-bar-2 {
+        width: 200%;
+        transform: rotate(135deg) translateX(35%);
+    }
+
+    .open-nav {
+        @apply h-80 sm:h-16 shadow-header sm:shadow-none;
+    }
+
+    .links li {
+        @apply transform hover:-translate-y-0.5 transition-transform;
+    }
+
+    h2 {
+        @apply mb-8 -ml-8 text-4xl;
+    }
+
+    #contact ul, p, button {
+        @apply text-lg 2xl:text-2xl;
+    }
+
+    #projects-container::after {
+        content: '';
+        @apply block h-16 bg-gray-100 md:hidden;
+    }
+
+    /* todo: cari tahu gap-x-8 buat apa */
+    .project-card {
+        @apply md:w-1/2 lg:w-1/3 md:gap-x-8 cursor-pointer;
+    }
+
+    .project-title {
+        @apply sticky top-16 md:static mb-4 text-center z-10 md:z-0;
+    }
+
+    .project-thumbnail {
+        @apply flex items-end md:items-center justify-center h-96 md:h-60 pb-8 md:pb-0 bg-gray-100 transform lg:-translate-y-16 transition-transform md:z-10;
+    }
+
+    .project-card:hover .project-thumbnail {
+        @apply lg:translate-y-0;
+    }
+
+    /* Atau h-screen diganti dengan bottom-0 */
+    .prodesc {
+        @apply fixed top-0 left-0 h-screen py-16 px-8 sm:px-16 lg:px-32 bg-gray-100 text-gray-900 overflow-y-auto overscroll-contain translate-y-full transition-transform duration-500 z-50;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .prodesc > * {
+        @apply opacity-0 transition-opacity duration-500 delay-700;
+    }
+
+    .prodesc::-webkit-scrollbar {
+        display: none;
+    }
+
+    .prodesc a {
+        @apply underline;
+    }
+
+    .prodesc abbr {
+        @apply no-underline;
+    }
+
+    p {
+        @apply mb-4;
+    }
+
+    article.open-prodesc {
+        @apply -translate-y-0;
+    }
+
+    article.open-prodesc > * {
+        @apply opacity-100;
+    }
+
+    .prodesc-title {
+        @apply text-4xl font-bold text-gray-900 mb-8;
+    }
+
+    .prodesc-sec, .prodesc-summary {
+        @apply flex flex-col lg:flex-row lg:gap-x-12 gap-y-8 mb-12 lg:mb-20;
+    }
+    
+    .prodesc-summary > div:first-child {
+        @apply flex-none text-gray-600;
+    }
+
+    .prodesc-summary dl {
+        @apply grid grid-cols-4 gap-x-2;
+    }
+
+    .prodesc-summary .dd {
+        @apply col-span-3 mb-2;
+    }
+
+    .prodesc-summary .dd-ex {
+        @apply col-span-full;
+    }
+
+    .prodesc-summary .dd::before {
+        content: ': ';
+    }
+
+    .prodesc-summary ul {
+        @apply list-disc pl-5;
+    }
+
+    .prodesc-sec {
+        @apply items-center;
+    }
+
+    .prodesc-sec > div {
+        @apply lg:w-1/2;
+    }
+
+    .prodesc-sec h4 {
+        @apply text-3xl mb-2;
+    }
+
+    .prodesc-sec img {
+        @apply drop-shadow;
+    }
+
+    #btn-back:hover #arr-icon {
+        @apply -translate-x-2;
+    }
+
+    div.open-alt-header {
+        @apply translate-y-0;
+    }
+
+    .icon {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: 'icomoon' !important;
+        speak: never;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .icon-linkedin-square::before {
+        content: "\f08c";
+    }
+    .icon-github::before {
+        content: "\f09b";
+    }
+    .icon-square::before {
+        content: "\f0c8";
+    }
+    .icon-envelope::before {
+        content: "\f0e0";
+    }
+    .icon-instagram::before {
+        content: "\f16d";
+    }
+}
