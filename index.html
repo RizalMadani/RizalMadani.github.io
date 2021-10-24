@@ -159,7 +159,7 @@
     </div>
 
     <header class="fixed left-0 flex flex-col sm:flex-row items-center sm:justify-between
-                    w-full h-16 px-16 bg-gray-900 bg-opacity-50
+                    w-full h-16 px-16 bg-opacity-50
                     transition-all duration-500 ease-out backdrop-blur z-30">
         <div>
             <img src="assets/img/pfp-letter-mark.svg" class="mx-auto sm:mx-0" width="60" height="60" alt="RM Letter Mark">
@@ -183,7 +183,7 @@
         </nav>
     </header>
 
-    <div class="px-16 md:px-32 bg-gray-900">
+    <main class="px-16 md:px-32 pb-20 bg-gray-900">
 
         <!-- todo: Kasih max-height -->
         <div class="flex items-center justify-center h-screen">
@@ -194,8 +194,8 @@
         </div>
 
         <!-- ganti jadi section untuk setiap bagian div dengan id ini -->
-        <div id="projects" class="relative mb-20 -mx-16 sm:mx-0">
-            <h2 class="absolute md:static mb-12 ml-8 sm:-ml-8 z-20">Proyek Unggulan</h2>
+        <section id="projects" class="relative mb-20 -mx-16 sm:mx-0" aria-describedby="sec-title-1">
+            <h2 class="absolute md:static mb-12 ml-8 sm:-ml-8 z-20" id="sec-title-1">Proyek Unggulan</h2>
 
             <div class="sticky top-0 md:hidden h-32 bg-gray-900 z-10"></div>
 
@@ -345,9 +345,9 @@
                     </div>
                 </section>
             </article>
-        </div>
+        </section>
 
-        <div id="about" class="mb-20">
+        <section id="about" class="mb-20">
             <h2>Tentang Saya</h2>
             <p>
                 Saya adalah salah satu mahasiswa Sistem Informasi dari Telkom University. 
@@ -369,9 +369,9 @@
 
                 <!-- html, css, bootstrap, sass, tailwind, git, java -->
             </ul>
-        </div>
+        </section>
 
-        <div id="contact">
+        <section id="contact">
             <h2>Kontak</h2>
             <p class="mb-4">Temui saya juga di beberapa belahan internet.</p>
 
@@ -397,12 +397,12 @@
                     <a href="https://instagram.com/rizalmdn/" target="_blank" rel="noopener noreferrer">Instagram</a>
                 </li>
             </ul>
-        </div>
+        </section>
+    </main>
 
-        <footer class="h-12 mt-20 text-center">
-            2021 &copy; Rizal Madani Portfolio
-        </footer>
-    </div>
+    <footer class="h-12 text-center">
+        2021 &copy; Rizal Madani Portfolio
+    </footer>
 
     <div class="fixed top-0 left-0 w-full px-8 sm:px-16 lg:px-32 py-4 bg-alt-header -translate-y-full transition-transform duration-700 z-50" id="alt-header">
         <button class="text-gray-900" id="btn-back" title="Back Button" aria-label="Back">

@@ -15,6 +15,10 @@
         scroll-behavior: smooth;
     }
 
+    header, main, footer {
+        @apply  bg-gray-900;
+    }
+
     #nav-toggler span {
         @apply block w-1/4 h-1/4 bg-gray-50 rounded-full;
     }
