@@ -1002,7 +1002,9 @@ div.open-alt-header {
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  row-gap: 1rem;
 }
 
 @media (min-width: 1024px) {
@@ -1024,7 +1026,7 @@ div.open-alt-header {
 }
 
 .other-project h4 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-size: 1.5rem;
   line-height: 2rem;
 }
