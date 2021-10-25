@@ -44,42 +44,36 @@
             animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94), ease-in;
             animation-fill-mode: forwards;
         }
-
         svg .svg-elem-1 {
             stroke-dashoffset: 642px;
             stroke-dasharray: 642px;
             fill: transparent;
             animation-delay: 0.5s, var(--fill-delay-time);
         }
-
         svg .svg-elem-2 {
             stroke-dashoffset: 504.6548245743669px;
             stroke-dasharray: 504.6548245743669px;
             fill: transparent;
             animation-delay: 0.62s, var(--fill-delay-time);
         }
-
         svg .svg-elem-3 {
             stroke-dashoffset: 388.274169921875px;
             stroke-dasharray: 388.274169921875px;
             fill: transparent;
             animation-delay: 0.74s, var(--fill-delay-time);
         }
-
         svg .svg-elem-4 {
             stroke-dashoffset: 482px;
             stroke-dasharray: 482px;
             fill: transparent;
             animation-delay: 0.86s, var(--fill-delay-time);
         }
-
         svg .svg-elem-5 {
             stroke-dashoffset: 548.2741088867188px;
             stroke-dasharray: 548.2741088867188px;
             fill: transparent;
             animation-delay: 0.98s, var(--fill-delay-time);
         }
-
         svg .svg-elem-6 {
             stroke-dashoffset: 548.274169921875px;
             stroke-dasharray: 548.274169921875px;
@@ -92,7 +86,6 @@
                 stroke-dashoffset: 0;
             }
         }
-
         @keyframes fill-anim {
             100% {
                 fill: rgb(255, 255, 255);
@@ -110,34 +103,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,400;0,700;1,400;1,700&family=Red+Rose&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<!-- todo:bisa ganti jadi class container-2xl untuk max width, pertimbangkan max-width di device lebar -->
 <body class="mx-auto bg-blue-100 text-gray-100 cursor-default">
-    <!-- <header class="fixed left-0 flex flex-col sm:flex-row items-center justify-between
-                    w-full h-16 px-16 bg-gray-900 bg-opacity-50
-                    transition-all duration-500 ease-out backdrop-blur z-30">
-        <div class="flex-auto sm:flex-none">
-            <img src="assets/img/pfp-letter-mark.svg" class="mx-auto sm:mx-0" width="60" height="60" alt="RM Letter Mark">
-        </div>
-
-        <div class="absolute top-2 right-2 sm:hidden w-12 h-12 p-2" id="nav-toggler" role="button">
-            <div class="grid grid-rows-2 grid-cols-2 justify-items-center items-center h-full">
-                <span class="close-bar-1"></span>
-                <span class="close-bar-2"></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-
-        <nav class="sm:h-auto sm:block text-center text-3xl sm:text-lg 2xl:text-2xl overflow-y-hidden" aria-label="Page" id="menu-nav">
-            <ul class="flex flex-col sm:flex-row space-y-8 sm:space-x-16 sm:space-y-0 py-8 links">
-                <li><a href="#projects">Proyek</a></li>
-                <li><a href="#about">Tentang</a></li>
-                <li><a href="#contact">Kontak</a></li>
-            </ul>
-        </nav>
-    </header> -->
-
-    <div id="cover" style="display: none;">
+    <div id="cover">
         <svg width="512" height="512" version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <metadata>
                 <rdf:rdf>
@@ -184,8 +151,6 @@
     </header>
 
     <main class="px-16 md:px-32 pb-20 bg-gray-900">
-
-        <!-- todo: Kasih max-height -->
         <div class="flex items-center justify-center h-screen">
             <div class="text-center">
                 <h1 class="mb-8 font-display text-7xl 2xl:text-8xl">Hai, <br>Saya Rizal M</h1>
@@ -193,7 +158,6 @@
             </div>
         </div>
 
-        <!-- ganti jadi section untuk setiap bagian div dengan id ini -->
         <section id="projects" class="relative mb-20" aria-describedby="sec-title-1">
             <h2 class="absolute md:static mb-12 sm:-ml-8 z-20" id="sec-title-1">Proyek Unggulan</h2>
 
@@ -203,7 +167,7 @@
                 <div class="md:flex md:justify-center md:space-x-16 bg-gray-100 md:bg-gray-900 mb-12 lg:mb-4" id="projects-container">
                     <div class="project-card" data-target="project-image-1">
                         <div class="project-title">
-                            <h3 class="font-bold text-3xl">SME Branding</h3>
+                            <span class="font-bold text-3xl">SME Branding</span>
                         </div>
                         <div class="project-thumbnail">
                             <img src="assets/img/sme-branding-logo.png" width="140" height="140" alt="Logo SME Branding">
@@ -212,7 +176,7 @@
     
                     <div class="project-card" data-target="project-image-2">
                         <div class="project-title">
-                            <h3 class="font-bold text-3xl">SIKOST</h3>
+                            <span class="font-bold text-3xl">SIKOST</span>
                         </div>
                         <div class="project-thumbnail">
                             <img src="assets/img/sikost-logo.png" width="140" height="140" alt="Logo SIKOST">
@@ -257,7 +221,6 @@
                     </div>
                 </section>
 
-                <!-- todo: percobaan ganti gap dengan space-... -->
                 <div class="lg:w-4/5 max-w-screen-2xl mx-auto mb-16 flex flex-col md:flex-row items-center justify-around gap-8">
                     <img src="assets/img/sme-branding-logo-vertikal.png" class="w-32 md:w-2/12 md:h-auto" width="240" height="240" alt="Logo SME Branding">
                     <img src="assets/img/smespedia.png" class="h-12 md:w-4/12 md:h-auto" alt="Logo SMEspedia">
@@ -449,19 +412,6 @@
         </button>
     </div>
 
-    <script>
-        // todo: mungkin pindah aja ke eksternal script
-        window.addEventListener('load', () => {
-            // fade anim delay + fade anim duration + threshold = 4.2
-            let time_out = (2.4 + 0.8 + 1) * 1000;
-
-            setTimeout(() => {
-                let cover = document.getElementById('cover');
-
-                cover.style.display = 'none';
-            }, time_out);
-        });
-    </script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

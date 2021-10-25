@@ -725,6 +725,13 @@ h2 {
   line-height: 1.75rem;
 }
 
+@media (min-width: 1536px) {
+  #contact ul, p, button {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
 #projects-container::after {
   content: '';
   display: block;
@@ -739,8 +746,6 @@ h2 {
   }
 }
 
-/* todo: cari tahu gap-x-8 buat apa */
-
 .project-card {
   cursor: pointer;
 }
@@ -748,11 +753,6 @@ h2 {
 @media (min-width: 768px) {
   .project-card {
     width: 50%;
-  }
-
-  .project-card {
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
   }
 }
 
@@ -1176,10 +1176,6 @@ div.open-alt-header {
   margin-bottom: 3rem;
 }
 
-.ml-8 {
-  margin-left: 2rem;
-}
-
 .mb-16 {
   margin-bottom: 4rem;
 }
@@ -1206,10 +1202,6 @@ div.open-alt-header {
 
 .grid {
   display: grid;
-}
-
-.hidden {
-  display: none;
 }
 
 .h-16 {
@@ -1256,10 +1248,6 @@ div.open-alt-header {
   max-width: 640px;
 }
 
-.flex-auto {
-  flex: 1 1 auto;
-}
-
 .-translate-y-full {
   --tw-translate-y: -100%;
   transform: var(--tw-transform);
@@ -1299,10 +1287,6 @@ div.open-alt-header {
 
 .justify-center {
   justify-content: center;
-}
-
-.justify-between {
-  justify-content: space-between;
 }
 
 .justify-around {
@@ -1487,10 +1471,6 @@ div.open-alt-header {
     height: auto;
   }
 
-  .sm\:flex-none {
-    flex: none;
-  }
-
   .sm\:grid-flow-col {
     grid-auto-flow: column;
   }
@@ -1591,11 +1571,6 @@ div.open-alt-header {
 
   .lg\:w-4\/5 {
     width: 80%;
-  }
-
-  .lg\:-translate-y-16 {
-    --tw-translate-y: -4rem;
-    transform: var(--tw-transform);
   }
 
   .lg\:grid-cols-5 {
