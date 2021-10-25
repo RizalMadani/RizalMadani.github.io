@@ -58,7 +58,7 @@
     }
 
     #contact ul, p, button {
-        @apply text-lg 2xl:text-2xl;
+        @apply text-lg;
     }
 
     #projects-container::after {
@@ -172,6 +172,26 @@
 
     div.open-alt-header {
         @apply translate-y-0;
+    }
+
+    .other-project {
+        @apply flex flex-col lg:flex-row gap-8 mb-8 lg:mb-12;
+    }
+
+    .other-project > div:first-child {
+        @apply lg:w-1/3;
+    }
+    
+    .other-project > div:last-child {
+        @apply lg:w-2/3;
+    }
+
+    .other-project h4 {
+        @apply mb-4 text-2xl;
+    }
+
+    .small-info {
+        @apply text-sm italic;
     }
 
     .icon {
