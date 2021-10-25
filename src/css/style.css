@@ -16,9 +16,27 @@
     }
 
     header, main, footer {
-        @apply  bg-gray-900;
+        @apply bg-gray-900;
     }
 
+    main > section {
+        scroll-margin-top: 4rem;
+    }
+
+    h2 {
+        @apply mb-8 -ml-8 text-4xl;
+    }
+
+    #contact ul, p, button {
+        @apply text-lg 2xl:text-xl;
+    }
+
+    p {
+        @apply mb-4;
+    }
+}
+
+@layer components {
     #nav-toggler span {
         @apply block w-1/4 h-1/4 bg-gray-50 rounded-full;
     }
@@ -51,14 +69,6 @@
 
     .links li {
         @apply transform hover:-translate-y-0.5 transition-transform;
-    }
-
-    h2 {
-        @apply mb-8 -ml-8 text-4xl;
-    }
-
-    #contact ul, p, button {
-        @apply text-lg 2xl:text-xl;
     }
 
     #projects-container::after {
@@ -103,10 +113,6 @@
 
     .prodesc abbr {
         @apply no-underline;
-    }
-
-    p {
-        @apply mb-4;
     }
 
     article.open-prodesc {

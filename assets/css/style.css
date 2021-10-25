@@ -650,6 +650,67 @@ header, main, footer {
   background-color: rgba(24, 24, 27, var(--tw-bg-opacity));
 }
 
+main > section {
+  scroll-margin-top: 4rem;
+}
+
+h2 {
+  margin-bottom: 2rem;
+  margin-left: -2rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+#contact ul, p, button {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 1536px) {
+  #contact ul, p, button {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 #nav-toggler span {
   display: block;
   height: 25%;
@@ -711,25 +772,6 @@ header, main, footer {
 .links li:hover {
   --tw-translate-y: -0.125rem;
   transform: var(--tw-transform);
-}
-
-h2 {
-  margin-bottom: 2rem;
-  margin-left: -2rem;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-#contact ul, p, button {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-@media (min-width: 1536px) {
-  #contact ul, p, button {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
 }
 
 #projects-container::after {
@@ -890,10 +932,6 @@ h2 {
 
 .prodesc abbr {
   text-decoration: none;
-}
-
-p {
-  margin-bottom: 1rem;
 }
 
 article.open-prodesc {
@@ -1071,40 +1109,6 @@ div.open-alt-header {
   content: "\f16d";
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .fixed {
   position: fixed;
 }
@@ -1222,10 +1226,6 @@ div.open-alt-header {
 
 .h-32 {
   height: 8rem;
-}
-
-.h-80 {
-  height: 20rem;
 }
 
 .w-full {
@@ -1406,11 +1406,6 @@ div.open-alt-header {
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgba(24, 24, 27, var(--tw-text-opacity));
-}
-
-.shadow-header {
-  --tw-shadow: 0 1px 40px rgba(250, 250, 250, 0.1);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .backdrop-blur {
