@@ -53,7 +53,7 @@ toggler.onclick = () => {
     const child = toggler.children[0];
     child.classList.toggle('pressed');
 
-    if (aria === 'true')
+    if (toggler.ariaExpanded === 'true')
         toggler.ariaExpanded = false;
     else
         toggler.ariaExpanded = true;
