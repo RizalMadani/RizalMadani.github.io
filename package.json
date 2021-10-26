@@ -10,7 +10,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "dev": "npx tailwindcss -i src/css/style.css -o assets/css/style.css -w"
+    "dev": "npx tailwindcss -i src/css/style.css -o assets/css/style.css -w",
+    "production": "npx tailwindcss -i src/css/style.css -o assets/css/style.css -m"
   },
   "author": "rizami",
   "license": "ISC"
