@@ -47,11 +47,14 @@ const toggler = document.getElementById('nav-toggler');
 
 toggler.onclick = () => {
     const header = document.querySelector('header');
-    
     header.classList.toggle('h-16');
     header.classList.toggle('open-nav');
 
     const child = toggler.children[0];
-
     child.classList.toggle('pressed');
+
+    if (aria === 'true')
+        toggler.ariaExpanded = false;
+    else
+        toggler.ariaExpanded = true;
 }
