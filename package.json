@@ -4,14 +4,14 @@
   "description": "",
   "main": "postcss.config.js",
   "dependencies": {
-    "autoprefixer": "^10.3.7",
-    "postcss": "^8.3.9",
-    "tailwindcss": "^2.2.17"
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19"
   },
   "devDependencies": {},
   "scripts": {
     "dev": "npx tailwindcss -i src/css/style.css -o assets/css/style.css -w",
-    "production": "npx tailwindcss -i src/css/style.css -o assets/css/style.css -m"
+    "production": "npx tailwindcss -i src/css/style.css -o assets/css/style.min.css -m"
   },
   "author": "rizami",
   "license": "ISC"
