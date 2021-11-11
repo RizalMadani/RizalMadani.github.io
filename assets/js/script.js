@@ -1,3 +1,4 @@
+// @ts-check
 'use strict';
 
 window.addEventListener('load', () => {
@@ -54,7 +55,7 @@ toggler.onclick = () => {
     child.classList.toggle('pressed');
 
     if (toggler.ariaExpanded === 'true')
-        toggler.ariaExpanded = false;
+        toggler.ariaExpanded = 'false';
     else
-        toggler.ariaExpanded = true;
+        toggler.ariaExpanded = 'true';
 }
