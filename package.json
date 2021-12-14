@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "postcss.config.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "autoprefixer": "^10.4.0",
-    "postcss": "^8.3.11",
-    "tailwindcss": "^2.2.19"
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.2"
   },
-  "devDependencies": {},
   "scripts": {
     "dev": "npx tailwindcss -i src/css/style.css -o assets/css/style.css -w",
     "production": "npx tailwindcss -i src/css/style.css -o assets/css/style.min.css -m"
