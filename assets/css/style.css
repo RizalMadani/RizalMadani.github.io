@@ -593,7 +593,6 @@ p {
 }
 
 .links li {
-  transform: var(--tw-transform);
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -656,7 +655,6 @@ p {
 .project-thumbnail {
   display: flex;
   height: 24rem;
-  transform: var(--tw-transform);
   align-items: flex-end;
   justify-content: center;
   --tw-bg-opacity: 1;

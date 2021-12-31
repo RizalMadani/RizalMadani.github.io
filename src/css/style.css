@@ -68,7 +68,7 @@
     }
 
     .links li {
-        @apply transform hover:-translate-y-0.5 transition-transform;
+        @apply hover:-translate-y-0.5 transition-transform;
     }
 
     #projects-container::after {
@@ -85,7 +85,7 @@
     }
 
     .project-thumbnail {
-        @apply flex items-end md:items-center justify-center h-96 md:h-60 pb-8 md:pb-0 bg-gray-100 transform lg:-translate-y-16 transition-transform md:z-10;
+        @apply flex items-end md:items-center justify-center h-96 md:h-60 pb-8 md:pb-0 bg-gray-100 lg:-translate-y-16 transition-transform md:z-10;
     }
 
     .project-card:hover .project-thumbnail {
