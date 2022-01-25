@@ -120,7 +120,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
 </head>
 <body class="mx-auto bg-blue-100 text-gray-100 cursor-default">
-    <div id="cover">
+    <!-- <div id="cover">
         <svg width="512" height="512" version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
             <g fill="#fff" fill-opacity=".5" fill-rule="evenodd" stroke="#fff" stroke-width="4">
                 <rect x="72" y="136" width="80" height="240" stop-color="#000000" style="mix-blend-mode: normal; paint-order: stroke;" class="svg-elem-1"></rect>
@@ -131,11 +131,11 @@
                 <path d="m280 136-1e-5 160 160-2e-5z" stop-color="#000000" style="mix-blend-mode: normal; paint-order: stroke;" class="svg-elem-6"></path>
             </g>
         </svg>
-    </div>
+    </div> -->
 
     <header class="fixed left-0 flex flex-col sm:flex-row items-center sm:justify-between
-                    w-full h-16 px-16 bg-opacity-50
-                    transition-all duration-500 ease-out backdrop-blur z-30">
+        w-full h-16 px-16 bg-opacity-50
+        duration-300 ease-in backdrop-blur z-30">
         <div>
             <img src="assets/img/pfp-letter-mark.svg" class="mx-auto sm:mx-0" width="60" height="60" alt="RM Letter Mark">
         </div>
@@ -149,8 +149,8 @@
             </div>
         </div>
 
-        <nav class="sm:h-auto sm:block text-center text-3xl sm:text-lg 2xl:text-2xl overflow-y-hidden" aria-label="Page" id="menu-nav">
-            <ul class="flex flex-col sm:flex-row space-y-8 sm:space-x-16 sm:space-y-0 py-8 links">
+        <nav class="flex-grow sm:flex-none text-center text-4xl sm:text-lg 2xl:text-2xl overflow-y-hidden" aria-label="Page" id="menu-nav">
+            <ul class="flex flex-col sm:flex-row space-y-8 sm:space-x-16 sm:space-y-0 pt-8 sm:pt-0 links">
                 <li><a href="#projects">Proyek</a></li>
                 <li><a href="#about">Tentang</a></li>
                 <li><a href="#contact">Kontak</a></li>

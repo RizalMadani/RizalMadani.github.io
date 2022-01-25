@@ -64,7 +64,7 @@
     }
 
     .open-nav {
-        @apply h-80 sm:h-16 shadow-header sm:shadow-none;
+        @apply h-full sm:h-16;
     }
 
     .links li {
