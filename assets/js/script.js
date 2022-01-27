@@ -31,12 +31,16 @@ const toggle_menu = () => {
 }
 
 toggler.onclick = () => {
-    if (window.location.hash === '#menu') {
+    if (toggler.ariaExpanded === 'true') {
         window.history.back();
-        return;
+        current_toggler = () => void 0;
+    }
+    else {
+        window.location.hash = '#menu';
+        current_toggler = toggle_menu;
     }
 
-    window.location.hash = '#menu';
+    toggle_menu()
 }
 
 
@@ -70,8 +74,7 @@ btn_back.onclick = () => {
 window.onhashchange = () => {
     const hash = window.location.hash;
     if (hash === '#menu') {
-        toggle_menu();
-        current_toggler = toggle_menu;
+        return;
     } else if (hash.includes('#project-')) {
         open_prodesc();
         current_toggler = open_prodesc;
