@@ -1,20 +1,17 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-  mode: 'jit',
-  purge: [
+  content: [
     'index.html',
-    'nav-toggler.html',
     'assets/js/script.js'
   ],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
       black: colors.black,
       white: colors.white,
-      gray: colors.gray,
+      gray: colors.zinc,
       blue: colors.blue,
     },
     extend: {

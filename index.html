@@ -114,13 +114,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,400;0,700;1,400;1,700&family=Red+Rose&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" sizes="32x32" href="favicon-32.png" type="image/png">
     <link rel="shortcut icon" sizes="196x196" href="favicon-196.png" type="image/png">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
 </head>
 <body class="mx-auto bg-blue-100 text-gray-100 cursor-default">
-    <div id="cover">
+    <!-- <div id="cover">
         <svg width="512" height="512" version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
             <g fill="#fff" fill-opacity=".5" fill-rule="evenodd" stroke="#fff" stroke-width="4">
                 <rect x="72" y="136" width="80" height="240" stop-color="#000000" style="mix-blend-mode: normal; paint-order: stroke;" class="svg-elem-1"></rect>
@@ -131,11 +131,11 @@
                 <path d="m280 136-1e-5 160 160-2e-5z" stop-color="#000000" style="mix-blend-mode: normal; paint-order: stroke;" class="svg-elem-6"></path>
             </g>
         </svg>
-    </div>
+    </div> -->
 
     <header class="fixed left-0 flex flex-col sm:flex-row items-center sm:justify-between
-                    w-full h-16 px-16 bg-opacity-50
-                    transition-all duration-500 ease-out backdrop-blur z-30">
+        w-full h-16 px-16 bg-opacity-50
+        duration-300 ease-in backdrop-blur z-30">
         <div>
             <img src="assets/img/pfp-letter-mark.svg" class="mx-auto sm:mx-0" width="60" height="60" alt="RM Letter Mark">
         </div>
@@ -149,8 +149,8 @@
             </div>
         </div>
 
-        <nav class="sm:h-auto sm:block text-center text-3xl sm:text-lg 2xl:text-2xl overflow-y-hidden" aria-label="Page" id="menu-nav">
-            <ul class="flex flex-col sm:flex-row space-y-8 sm:space-x-16 sm:space-y-0 py-8 links">
+        <nav class="flex-grow sm:flex-none text-center text-4xl sm:text-lg 2xl:text-2xl overflow-y-hidden" aria-label="Page" id="menu-nav">
+            <ul class="flex flex-col sm:flex-row space-y-8 sm:space-x-16 sm:space-y-0 pt-8 sm:pt-0 links">
                 <li><a href="#projects">Proyek</a></li>
                 <li><a href="#about">Tentang</a></li>
                 <li><a href="#contact">Kontak</a></li>
@@ -173,7 +173,7 @@
                 <div class="sticky top-0 md:hidden h-32 bg-gray-900 z-10" aria-hidden="true"></div>
 
                 <div class="md:flex md:justify-center md:space-x-16 bg-gray-100 md:bg-gray-900 mb-12 lg:mb-4" id="projects-container">
-                    <div class="project-card" data-target="project-image-1">
+                    <div class="project-card" data-target="#project-1">
                         <div class="project-title">
                             <span class="font-bold text-3xl">SME Branding</span>
                         </div>
@@ -182,7 +182,7 @@
                         </div>
                     </div>
 
-                    <div class="project-card" data-target="project-image-2">
+                    <div class="project-card" data-target="#project-2">
                         <div class="project-title">
                             <span class="font-bold text-3xl">SIKOST</span>
                         </div>
@@ -193,7 +193,7 @@
                 </div>
             </div>
 
-            <article class="prodesc" id="prodesc-1" aria-labelledby="project-1-title">
+            <article class="prodesc" id="project-1" aria-labelledby="project-1-title">
                 <div class="prodesc-title">
                     <h3 id="project-1-title">SME Branding</h3>
                 </div>
@@ -257,7 +257,7 @@
                 </section>
             </article>
 
-            <article class="prodesc" id="prodesc-2" aria-labelledby="project-2-title">
+            <article class="prodesc" id="project-2" aria-labelledby="project-2-title">
                 <div class="prodesc-title">
                     <h3 id="project-2-title">SIKOST</h3>
                 </div>
@@ -300,7 +300,7 @@
 
                 <section class="prodesc-sec lg:flex-row-reverse">
                     <div>
-                        <img src="assets/img/sk-3.png" width="1024" height="576" alt="Halaman dasbor UMKM SME Branding" title="Halaman dasbor untuk UMKM">
+                        <img src="assets/img/sk-3.png" width="1024" height="576" alt="Halaman dasbor pengelola kost" title="Halaman dasbor pengelola">
                     </div>
                     <div>
                         <h4>Pengelolaan Kost</h4>
@@ -310,7 +310,7 @@
 
                 <section class="prodesc-sec">
                     <div>
-                        <img src="assets/img/sk-4.png" width="1024" height="576" alt="Halaman login SME Branding" title="Halaman login">
+                        <img src="assets/img/sk-4.png" width="1024" height="576" alt="Halaman dasbor penghuni kost" title="Halaman dasbor customer">
                     </div>
                     <div>
                         <h4>Monitor Tagihan Kost</h4>
@@ -369,12 +369,12 @@
 
             <p class="mb-4 mt-4"><i lang="en" title="Alat; alat teknologi">Tools</i> yang biasa saya pakai:</p>
             <ul class="grid sm:grid-flow-col sm:grid-rows-3 gap-4 max-w-screen-sm text-2xl">
-                <li class="transform hover:scale-105 transition-transform">PHP</li>
-                <li class="transform hover:scale-105 transition-transform">CodeIgniter</li>
-                <li class="transform hover:scale-105 transition-transform">Laravel</li>
-                <li class="transform hover:scale-105 transition-transform">MySQL</li>
-                <li class="transform hover:scale-105 transition-transform">Javascript</li>
-                <li class="transform hover:scale-105 transition-transform">Figma</li>
+                <li class="hover:scale-105 transition-transform">PHP</li>
+                <li class="hover:scale-105 transition-transform">CodeIgniter</li>
+                <li class="hover:scale-105 transition-transform">Laravel</li>
+                <li class="hover:scale-105 transition-transform">MySQL</li>
+                <li class="hover:scale-105 transition-transform">Javascript</li>
+                <li class="hover:scale-105 transition-transform">Figma</li>
 
                 <!-- html, css, bootstrap, sass, tailwind, git, java -->
             </ul>
@@ -420,6 +420,6 @@
         </button>
     </div>
 
-    <script src="assets/js/script.js"></script>
+    <script src="src/js/script.js"></script>
 </body>
 </html>
