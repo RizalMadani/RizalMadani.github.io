@@ -73,12 +73,10 @@ btn_back.onclick = () => {
 
 window.onhashchange = () => {
     const hash = window.location.hash;
-    if (hash === '#menu') {
-        return;
-    } else if (hash.includes('#project-')) {
+    if (hash.includes('#project-')) {
         open_prodesc();
         current_toggler = open_prodesc;
-    } else {
+    } else if(hash !== '#menu'){
         current_toggler();
         current_toggler = () => void 0;
         current_project = '';
