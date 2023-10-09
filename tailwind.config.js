@@ -1,31 +1,30 @@
-const colors = require('tailwindcss/colors');
+/** @type {import('tailwindcss').Config} */
+import { black, white, zinc, blue } from 'tailwindcss/colors';
 
-module.exports = {
-  content: [
-    'index.html',
-    'src/js/script.js'
-  ],
-  theme: {
-    colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
-      black: colors.black,
-      white: colors.white,
-      gray: colors.zinc,
-      blue: colors.blue,
+export const content = [
+  'index.html',
+  'src/js/script.js'
+];
+export const theme = {
+  colors: {
+    transparent: 'transparent',
+    current: 'currentColor',
+    black: black,
+    white: white,
+    gray: zinc,
+    blue: blue,
+  },
+  extend: {
+    fontFamily: {
+      'sans': ['"Red Hat Text"', 'sans-serif'],
+      'display': ['"Red Rose"', 'cursive']
     },
-    extend: {
-      fontFamily: {
-        'sans': ['"Red Hat Text"', 'sans-serif'],
-        'display': ['"Red Rose"', 'cursive']
-      },
-      boxShadow: {
-        'header': '0 1px 40px rgba(250, 250, 250, 0.1)'
-      },
-      backgroundImage: {
-        'alt-header': 'linear-gradient(180deg, currentColor 75%, rgba(255, 255, 255, 0))'
-      },
+    boxShadow: {
+      'header': '0 1px 40px rgba(250, 250, 250, 0.1)'
+    },
+    backgroundImage: {
+      'alt-header': 'linear-gradient(180deg, currentColor 75%, rgba(255, 255, 255, 0))'
     },
   },
-  plugins: [],
-}
+};
+export const plugins = [];

@@ -1,15 +1,9 @@
-// import {src, dest, series} from 'gulp'
-// import uglify from 'gulp-uglify';
-// import concat from 'gulp-concat';
-// import inlineSource from 'gulp-inline-source-html'
-// import processHtml from 'gulp-processhtml'
-
 const {src, dest, series} = require('gulp');
 const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
 const inlineSource = require('gulp-inline-source-html');
 const processHtml = require('gulp-processhtml');
-const rename = require('gulp-rename');
+// const rename = require('gulp-rename');
 
 function javascript() {
     return src('src/js/*.js')
@@ -19,10 +13,10 @@ function javascript() {
 }
 
 function html() {
-    return src('index-dev.html')
+    return src('src/index.html')
         .pipe(processHtml({environment: 'production'}))
         .pipe(inlineSource())
-        .pipe(rename('index.html'))
+        // .pipe(rename('index.html'))
         .pipe(dest('./'))
 }
 
