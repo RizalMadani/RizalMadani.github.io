@@ -2,7 +2,8 @@
 import { black, white, zinc, blue } from 'tailwindcss/colors';
 
 export const content = [
-  'index.html',
+  'src/index.html',
+  'src/css/style.css',
   'src/js/script.js'
 ];
 export const theme = {

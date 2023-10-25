@@ -34,8 +34,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,400;0,700;1,400;1,700&family=Red+Rose&display=swap" rel="stylesheet">
-    <!-- build:css assets/css/style.min.css -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- build:css /assets/css/style.min.css -->
+    <link rel="stylesheet" href="/assets/css/style.css">
     <!-- /build -->
     <link rel="shortcut icon" sizes="32x32" href="favicon-32.png" type="image/png">
     <link rel="shortcut icon" sizes="196x196" href="favicon-196.png" type="image/png">
@@ -54,7 +54,7 @@
         w-full h-16 px-16 bg-opacity-50
         duration-300 ease-in backdrop-blur z-30">
         <div>
-            <img src="assets/img/pfp-letter-mark.svg" class="mx-auto sm:mx-0" width="60" height="60" alt="RM Letter Mark">
+            <img src="/assets/img/pfp-letter-mark.svg" class="mx-auto sm:mx-0" width="60" height="60" alt="RM Letter Mark">
         </div>
 
         <div class="absolute top-2 right-2 sm:hidden w-12 h-12 p-2" id="nav-toggler" role="button" aria-label="Navigation toggler" aria-controls="menu-nav" aria-expanded="false">
@@ -89,22 +89,40 @@
             <div class="-mx-16 sm:mx-0">
                 <div class="sticky top-0 md:hidden h-32 bg-gray-900 z-10" aria-hidden="true"></div>
 
-                <div class="md:flex md:justify-center md:space-x-16 bg-gray-100 md:bg-gray-900 mb-12 lg:mb-4" id="projects-container">
+                <div class="md:flex md:flex-wrap md:justify-center md:gap-x-16 bg-gray-100 md:bg-gray-900 mb-12 lg:mb-4" id="projects-container">
                     <div class="project-card" data-target="#project-1">
                         <div class="project-title">
-                            <span class="font-bold text-3xl">SME Branding</span>
+                            <span class="font-bold text-3xl">Haifa Nida</span>
                         </div>
                         <div class="project-thumbnail">
-                            <img src="assets/img/sme-branding-logo.png" width="140" height="140" alt="Logo SME Branding">
+                            <img src="/assets/img/haifa.png" width="140" height="140" alt="Haifa">
                         </div>
                     </div>
 
                     <div class="project-card" data-target="#project-2">
                         <div class="project-title">
+                            <span class="font-bold text-3xl">E-Katalog</span>
+                        </div>
+                        <div class="project-thumbnail">
+                            <img src="/assets/img/e-katalog.png" width="140" height="140" alt="E-Katalog">
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-target="#project-3">
+                        <div class="project-title">
+                            <span class="font-bold text-3xl">SME Branding</span>
+                        </div>
+                        <div class="project-thumbnail">
+                            <img src="/assets/img/sme-branding-logo.png" width="140" height="140" alt="Logo SME Branding">
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-target="#project-4">
+                        <div class="project-title">
                             <span class="font-bold text-3xl">SIKOST</span>
                         </div>
                         <div class="project-thumbnail">
-                            <img src="assets/img/sikost-logo.png" width="140" height="140" alt="Logo SIKOST">
+                            <img src="/assets/img/sikost-logo.png" width="140" height="140" alt="Logo SIKOST">
                         </div>
                     </div>
                 </div>
@@ -112,7 +130,138 @@
 
             <article class="prodesc" id="project-1" aria-labelledby="project-1-title">
                 <div class="prodesc-title">
-                    <h3 id="project-1-title">SME Branding</h3>
+                    <h3 id="project-1-title">Haifa Nida</h3>
+                </div>
+
+                <div class="prodesc-summary">
+                    <div>
+                        <dl>
+                            <dt>Tahun</dt>
+                            <dd class="dd">2022 - 2023</dd>
+                            <dt>Jenis</dt>
+                            <dd class="dd">Web App</dd>
+                            <dt>Peran</dt>
+                            <dd class="dd">Full-stack Dev</dd>
+                            <dt class="dd-ex">Teknologi Utama:</dt>
+                            <dd class="dd-ex">
+                                <ul>
+                                    <li>Laravel v10</li>
+                                    <li>MySQL</li>
+                                    <li>Bootstrap v5</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div>
+                        <p>
+                            PT. Haifa Nida Wisata adalah salah satu penyedia layanan perjalanan umrah dan haji.
+                            Salah satu layanan yang ditawarkan adalah pemesanan paket yang memungkinkan pelanggan untuk mendapatkan paket perjalanan umrah atau haji.
+                            Pada perusahaan tersebut dibutuhkan digitalisasi layanan agar perusahaan bisa lebih mudah mengelola layanan dan menjadi lebih kompetitif di bidangnya.
+                        </p>
+                        <p>
+                            Dari proyek ini dibuatkan sebuah <i lang="en">landing page</i> dan juga aplikasi dasbor yang diperlukan perusahaan dalam digitalisasi layanan.
+                            Proyek yang dikerjakan merupakan Tugas Akhir yang dikerjakan saat menempuh pendidikan perkuliahan.
+                        </p>
+                    </div>
+                </div>
+
+                <section class="prodesc-sec">
+                    <div>
+                        <img src="/assets/img/hn-1.png" width="1024" height="576" alt="Halaman daftar paket" title="Halaman login">
+                    </div>
+                    <div>
+                        <h4><i lang="en">Landing Page</i></h4>
+                        <p>
+                            <i lang="en">Landing page</i> dibuat sebagai representasi <i lang="en" title="Daring; dalam jaringan">online</i>  yang dibutuhkan perusahaan untuk menambah kredibilitas dan <i lang="en" title="Kepercayaan">trust</i> kepada pelanggan atau agen yang ingin bekerja sama.
+                            Selain itu, <i lang="en">landing page</i> digunakan sebagai tempat pelanggan untuk mendapat berbagai informasi yang dibutuhkan seperti paket yang ditawarkan, kontak perusahaan, dan lain-lain.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="prodesc-sec lg:flex-row-reverse">
+                    <div>
+                        <img src="/assets/img/hn-2.png" width="1366" height="768" alt="Halaman dasbor kelola konten" title="Halaman dasbor untuk UMKM">
+                    </div>
+                    <div>
+                        <h4>Kelola Konten</h4>
+                        <p>
+                            Untuk mengelola konten di <i lang="en">landing page</i>, dibuatkan sebuah aplikasi dasbor.
+                            Admin web bisa mengelola konten seperti informasi kontak, <abbr title="Frequently Asked Question">FAQ</abbr>, dan lain-lain.
+                        </p>
+                    </div>
+                </section>
+            </article>
+
+            <article class="prodesc" id="project-2" aria-labelledby="project-2-title">
+                <div class="prodesc-title">
+                    <h3 id="project-2-title">E-Katalog</h3>
+                </div>
+
+                <div class="prodesc-summary">
+                    <div>
+                        <dl>
+                            <dt>Tahun</dt>
+                            <dd class="dd">2021-2022</dd>
+                            <dt>Jenis</dt>
+                            <dd class="dd">Web App</dd>
+                            <dt>Peran</dt>
+                            <dd class="dd">Back-end Dev</dd>
+                            <dt class="dd-ex">Teknologi Utama:</dt>
+                            <dd class="dd-ex">
+                                <ul>
+                                    <li>CodeIgniter 3</li>
+                                    <li>MySQL</li>
+                                    <li>HTML-CSS-JS</li>
+                                    <li>Bootstrap</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div>
+                        <p>
+                            E-katalog adalah aplikasi yang digunakan untuk melakukan pemesanan barang atau jasa pada suatu perusahaan. 
+                            Aplikasi yang dibuat menyediakan berbagai fitur seperti pengajuan barang, cetak surat pengajuan, review pengajuan, negosiasi, dan lain-lain.
+                        </p>
+                    </div>
+                </div>
+
+                <section class="prodesc-sec">
+                    <div>
+                        <img src="/assets/img/ek-1.png" width="1366" height="768" alt="Halaman detail paket" title="Halaman dasbor untuk admin">
+                    </div>
+                    <div>
+                        <h4>Membuat Pengajuan</h4>
+                        Pengguna yang berperan sebagai pemesan bisa mengajukan pemesanan barang atau jasa yang disedakan oleh vendor. 
+                    </div>
+                </section>
+
+                <section class="prodesc-sec lg:flex-row-reverse">
+                    <div>
+                        <img src="/assets/img/ek-2.png" width="675" height="224" alt="Link untuk melihat surat pengajuan" title="Halaman dasbor pengelola">
+                    </div>
+                    <div>
+                        <h4>Melihat Surat Pengajuan</h4>
+                        Pada aplikasi dibutuhkan sebuah fitur untuk melihat surat pengajuan yang bisa dilihat tanpa melakukan autentikasi.
+                        Maka dari itu dibuatkan sebuah <i lang="en">route</i> khusus untuk melihat surat yang memanfaatkan <abbr title="Universal ">UUID</abbr>,
+                        sehingga halaman masih bisa diakses tanpa autentikasi namun masih mempersulit seseorang untuk melihat surat lain dengan menebak <abbr title="Universal Resource">URL</abbr> surat.
+                    </div>
+                </section>
+
+                <section class="prodesc-sec">
+                    <div>
+                        <img src="/assets/img/ek-3.png" width="1366" height="768" alt="Halaman dasbor review paket" title="Halaman dasbor customer">
+                    </div>
+                    <div>
+                        <h4><i lang="en">Review</i> Pengajuan</h4>
+                        Pihak yang melakukan <i lang="en">review</i> bisa mengambil tindakan untuk menerima atau menolak pengajuan.
+                        Selain itu, mereka juga bisa melakukan negosiasi dengan vendor atau mengubah barang atau jasa yang dipesan dengan hal yang sama atau setara namun lebih murah.
+                    </div>
+                </section>
+            </article>
+
+            <article class="prodesc" id="project-3" aria-labelledby="project-3-title">
+                <div class="prodesc-title">
+                    <h3 id="project-3-title">SME Branding</h3>
                 </div>
 
                 <div class="prodesc-summary">
@@ -122,7 +271,7 @@
                             <dd class="dd">2020 - 2021</dd>
                             <dt>Jenis</dt>
                             <dd class="dd">Web App</dd>
-                            <dt>Role</dt>
+                            <dt>Peran</dt>
                             <dd class="dd">Full-stack Dev</dd>
                             <dt class="dd-ex">Teknologi Utama:</dt>
                             <dd class="dd-ex">
@@ -147,16 +296,16 @@
                 </div>
 
                 <div class="lg:w-4/5 max-w-screen-2xl mx-auto mb-16 flex flex-col md:flex-row items-center justify-around gap-8">
-                    <img src="assets/img/sme-branding-logo-vertikal.png" class="w-32 md:w-2/12 md:h-auto" width="146" height="145" alt="Logo SME Branding">
-                    <img src="assets/img/smespedia.png" class="w-3/5 md:w-4/12 md:h-auto" width="1824" height="332" alt="Logo SMEspedia">
+                    <img src="/assets/img/sme-branding-logo-vertikal.png" class="w-32 md:w-2/12 md:h-auto" width="146" height="145" alt="Logo SME Branding">
+                    <img src="/assets/img/smespedia.png" class="w-3/5 md:w-4/12 md:h-auto" width="1824" height="332" alt="Logo SMEspedia">
                 </div>
 
                 <section class="prodesc-sec">
                     <div>
-                        <img src="assets/img/sb-1.png" width="1024" height="576" alt="Halaman login SME Branding" title="Halaman login">
+                        <img src="/assets/img/sb-1.png" width="1024" height="576" alt="Halaman login SME Branding" title="Halaman login">
                     </div>
                     <div>
-                        <h4>Authentication &amp; Authorization</h4>
+                        <h4><i lang="en">Authentication &amp; Authorization</i></h4>
                         <p>Fitur autentikasi dan autorisasi ini digunakan untuk mengelola pengguna yang masuk ke platform dan membatasi akses sesuai <i lang="en" title="Peran pengguna dalam aplikasi; UMKM, freelancer, dan admin">role</i> pengguna.</p>
                         <p>Pembuatan fitur ini dilakukan secara manual dengan mengikuti panduan yang disarankan karena CodeIgniter 3 tidak mempunyai fitur ini secara bawaan.</p>
                     </div>
@@ -164,7 +313,7 @@
 
                 <section class="prodesc-sec lg:flex-row-reverse">
                     <div>
-                        <img src="assets/img/sb-2.png" width="1366" height="768" alt="Halaman dasbor UMKM SME Branding" title="Halaman dasbor untuk UMKM">
+                        <img src="/assets/img/sb-2.png" width="1366" height="768" alt="Halaman dasbor UMKM SME Branding" title="Halaman dasbor untuk UMKM">
                     </div>
                     <div>
                         <h4>Aplikasi Dasbor</h4>
@@ -174,9 +323,9 @@
                 </section>
             </article>
 
-            <article class="prodesc" id="project-2" aria-labelledby="project-2-title">
+            <article class="prodesc" id="project-4" aria-labelledby="project-4-title">
                 <div class="prodesc-title">
-                    <h3 id="project-2-title">SIKOST</h3>
+                    <h3 id="project-4-title">SIKOST</h3>
                 </div>
 
                 <div class="prodesc-summary">
@@ -186,8 +335,8 @@
                             <dd class="dd">2020</dd>
                             <dt>Jenis</dt>
                             <dd class="dd">Web App</dd>
-                            <dt>Role</dt>
-                            <dd class="dd">Back-end Dev</dd>
+                            <dt>Peran</dt>
+                            <dd class="dd">Full-stack Dev</dd>
                             <dt class="dd-ex">Teknologi Utama:</dt>
                             <dd class="dd-ex">
                                 <ul>
@@ -206,7 +355,7 @@
 
                 <section class="prodesc-sec">
                     <div>
-                        <img src="assets/img/sk-2.png" width="1366" height="768" alt="Halaman dasbor admin" title="Halaman dasbor untuk admin">
+                        <img src="/assets/img/sk-2.png" width="1366" height="768" alt="Halaman dasbor admin" title="Halaman dasbor untuk admin">
                     </div>
                     <div>
                         <h4>Dasbor Admin</h4>
@@ -217,7 +366,7 @@
 
                 <section class="prodesc-sec lg:flex-row-reverse">
                     <div>
-                        <img src="assets/img/sk-3.png" width="1366" height="768" alt="Halaman dasbor pengelola kost" title="Halaman dasbor pengelola">
+                        <img src="/assets/img/sk-3.png" width="1366" height="768" alt="Halaman dasbor pengelola kost" title="Halaman dasbor pengelola">
                     </div>
                     <div>
                         <h4>Pengelolaan Kost</h4>
@@ -227,7 +376,7 @@
 
                 <section class="prodesc-sec">
                     <div>
-                        <img src="assets/img/sk-4.png" width="1366" height="768" alt="Halaman dasbor penghuni kost" title="Halaman dasbor customer">
+                        <img src="/assets/img/sk-4.png" width="1366" height="768" alt="Halaman dasbor penghuni kost" title="Halaman dasbor customer">
                     </div>
                     <div>
                         <h4>Monitor Tagihan Kost</h4>
@@ -240,7 +389,7 @@
                 <h3 class="mb-8 text-xl">Proyek lainnya</h3>
                 <div class="other-project">
                     <div>
-                        <img src="assets/img/op-gdesk.png" width="1024" height="576" alt="Screenshot proyek gDESK">
+                        <img src="/assets/img/op-gdesk.png" width="1024" height="576" alt="Screenshot proyek gDESK">
                     </div>
                     <div>
                         <h4>gDESK</h4>
@@ -251,7 +400,7 @@
 
                 <div class="other-project">
                     <div>
-                        <img src="assets/img/op-kk.png" width="1024" height="576" alt="Screenshot proyek Kalkulator Kalori">
+                        <img src="/assets/img/op-kk.png" width="1024" height="576" alt="Screenshot proyek Kalkulator Kalori">
                     </div>
                     <div>
                         <h4>Kalkulator Kalori</h4>
@@ -262,7 +411,7 @@
 
                 <div class="other-project">
                     <div>
-                        <img src="assets/img/op-zis.png" width="1024" height="576" alt="Screenshot proyek ZIS">
+                        <img src="/assets/img/op-zis.png" width="1024" height="576" alt="Screenshot proyek ZIS">
                     </div>
                     <div>
                         <h4>ZIS</h4>
@@ -291,9 +440,8 @@
                 <li class="hover:scale-105 transition-transform">Laravel</li>
                 <li class="hover:scale-105 transition-transform">MySQL</li>
                 <li class="hover:scale-105 transition-transform">Javascript</li>
-                <li class="hover:scale-105 transition-transform">Figma</li>
 
-                <!-- html, css, bootstrap, sass, tailwind, git, java -->
+                <!-- html, css, bootstrap, tailwind, git, java -->
             </ul>
         </section>
 
@@ -337,7 +485,7 @@
         </button>
     </div>
 
-    <!-- build:js assets/js/script.min.js -->
+    <!-- build:js /assets/js/script.min.js -->
     <script src="js/script.js"></script>
     <!-- /build -->
 </body>

@@ -77,11 +77,11 @@
     }
 
     .project-card {
-        @apply md:w-1/2 lg:w-1/3 cursor-pointer;
+        @apply md:w-1/2 lg:w-1/3 mb-4 cursor-pointer;
     }
 
     .project-title {
-        @apply sticky top-16 md:static mb-4 text-center z-10 md:z-0;
+        @apply sticky top-16 md:static mb-6 text-center z-10 md:z-0;
     }
 
     .project-thumbnail {
